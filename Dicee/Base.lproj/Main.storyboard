@@ -42,11 +42,18 @@
                                 <state key="normal" title="Roll">
                                     <color key="titleColor" red="0.66666666666666663" green="0.65098039215686276" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="rollBottonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xBr-Yw-ZCS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="diceImageView1" destination="UAu-pS-g4b" id="CE0-cg-NAU"/>
+                        <outlet property="diceImageView2" destination="XNi-Js-JOo" id="6Ei-6h-Zxx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
