@@ -52,7 +52,7 @@
                     </view>
                     <connections>
                         <outlet property="diceImageView1" destination="UAu-pS-g4b" id="CE0-cg-NAU"/>
-                        <outlet property="diceImageView2" destination="XNi-Js-JOo" id="6Ei-6h-Zxx"/>
+                        <outlet property="diceImageView2" destination="XNi-Js-JOo" id="hks-xf-By6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
