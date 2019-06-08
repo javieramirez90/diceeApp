@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let diceArray = ["dice1", "dice2", "dice3", "dice4", "dice5", "dice6"]
+    
     var randomDiceeIndex1: Int = 0
     var randomDiceeIndex2: Int = 0
     
@@ -22,13 +24,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func rollBottonPressed(_ sender: UIButton) {
-        randomDiceeIndex1 = Int.random(in: 1 ... 6)
-        randomDiceeIndex2 = Int.random(in: 1 ... 6)
+        randomDiceeIndex1 = Int.random(in: 0 ... 5)
+        randomDiceeIndex2 = Int.random(in: 0 ... 5)
         
-        print(randomDiceeIndex1)
-        
-        diceImageView1.image = UIImage(named: "dice\(randomDiceeIndex1)")
-        diceImageView2.image = UIImage(named: "dice\(randomDiceeIndex2)")
+        diceImageView1.image = UIImage(named: diceArray[randomDiceeIndex1])
+        diceImageView2.image = UIImage(named: diceArray[randomDiceeIndex2])
     }
     
 }
