@@ -20,10 +20,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        updateDiceImages()
     }
 
     @IBAction func rollBottonPressed(_ sender: UIButton) {
+        updateDiceImages()
+    }
+    
+    func updateDiceImages() {
         randomDiceeIndex1 = Int.random(in: 0 ... 5)
         randomDiceeIndex2 = Int.random(in: 0 ... 5)
         
